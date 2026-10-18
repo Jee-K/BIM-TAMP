@@ -1,266 +1,391 @@
 {
-  "scene_format": "box-scene-v1",
+  "schema_version": 2,
+  "source_ifc": null,
   "name": "floor8",
-  "robot_start": [
-    2.5,
-    2.5,
-    0.15
-  ],
-  "copy_offset": [
-    0.0,
-    -3.0,
-    0.0
-  ],
-  "base_limits": [
-    [
-      -5.0,
-      -5.0
-    ],
-    [
-      5.0,
-      5.0
-    ]
-  ],
   "group_order": [
     "A",
     "B",
     "C"
   ],
-  "colors": {
-    "A": [
-      0.9,
-      0.1,
-      0.1,
-      1.0
-    ],
-    "B": [
-      0.1,
-      0.2,
-      0.9,
-      1.0
-    ],
-    "C": [
-      1.0,
-      0.5,
-      0.0,
-      1.0
-    ]
-  },
-  "targets": [
-    {
-      "group": "C",
-      "size": [
-        2.5,
-        2.5,
-        0.001
-      ],
-      "position": [
-        -3.0,
-        -3.0,
-        null
-      ],
-      "size_growth": [
-        1.5,
-        0.0,
-        0.0
-      ],
-      "max_size": [
-        4.0,
-        2.5,
-        0.001
-      ],
-      "color": [
-        1.0,
-        0.5,
-        0.0,
-        0.5
-      ]
-    },
-    {
-      "group": "B",
-      "size": [
-        2.5,
-        2.5,
-        0.001
-      ],
-      "position": [
-        -3.0,
-        0.0,
-        null
-      ],
-      "size_growth": [
-        1.5,
-        0.0,
-        0.0
-      ],
-      "max_size": [
-        4.0,
-        2.5,
-        0.001
-      ],
-      "color": [
-        0.1,
-        0.2,
-        0.9,
-        0.5
-      ]
-    },
-    {
-      "group": "A",
-      "size": [
-        2.5,
-        2.5,
-        0.001
-      ],
-      "position": [
-        -3.0,
-        3.0,
-        null
-      ],
-      "size_growth": [
-        1.5,
-        0.0,
-        0.0
-      ],
-      "max_size": [
-        4.0,
-        2.5,
-        0.001
-      ],
-      "color": [
-        0.9,
-        0.1,
-        0.1,
-        0.5
-      ]
-    }
+  "aabb_min": [
+    0.9775,
+    0.09999999999999998,
+    0.0
   ],
-  "placement": {
-    "original_resting_face": true,
-    "preserve_face_with_group_filter": false
-  },
-  "clutter_keepout": {
-    "robot_radius": 0.9,
-    "member_margin": 0.3,
-    "workspace_margin": 0.4,
-    "target_boundary": {
-      "axis": 0,
-      "side": "lower",
-      "margin": 0.3
-    }
-  },
+  "aabb_max": [
+    2.0225,
+    1.1,
+    0.1
+  ],
   "members": [
     {
+      "guid": "floor8:beam1",
       "name": "beam1",
-      "size": [
+      "ifc_type": "IfcMember",
+      "source_type": "member",
+      "group": "C",
+      "removal_rank": 2,
+      "aabb_min": [
+        0.9775,
+        0.09999999999999998,
+        0.0
+      ],
+      "aabb_max": [
+        1.0225,
+        1.1,
+        0.1
+      ],
+      "dimensions": [
         0.045,
         1.0,
         0.1
       ],
-      "position": [
+      "center": [
         1.0,
         0.6,
         0.05
-      ],
-      "group": "C"
+      ]
     },
     {
+      "guid": "floor8:beam2",
       "name": "beam2",
-      "size": [
+      "ifc_type": "IfcMember",
+      "source_type": "member",
+      "group": "C",
+      "removal_rank": 2,
+      "aabb_min": [
+        1.9775,
+        0.09999999999999998,
+        0.0
+      ],
+      "aabb_max": [
+        2.0225,
+        1.1,
+        0.1
+      ],
+      "dimensions": [
         0.045,
         1.0,
         0.1
       ],
-      "position": [
+      "center": [
         2.0,
         0.6,
         0.05
-      ],
-      "group": "C"
+      ]
     },
     {
+      "guid": "floor8:joist1",
       "name": "joist1",
-      "size": [
+      "ifc_type": "IfcMember",
+      "source_type": "member",
+      "group": "B",
+      "removal_rank": 1,
+      "aabb_min": [
+        1.025,
+        0.18000000000000002,
+        0.0
+      ],
+      "aabb_max": [
+        1.975,
+        0.22,
+        0.1
+      ],
+      "dimensions": [
         0.95,
         0.04,
         0.1
       ],
-      "position": [
+      "center": [
         1.5,
         0.2,
         0.05
-      ],
-      "group": "B"
+      ]
     },
     {
+      "guid": "floor8:joist3",
       "name": "joist3",
-      "size": [
+      "ifc_type": "IfcMember",
+      "source_type": "member",
+      "group": "B",
+      "removal_rank": 1,
+      "aabb_min": [
+        1.025,
+        0.6799999999999999,
+        0.0
+      ],
+      "aabb_max": [
+        1.975,
+        0.72,
+        0.1
+      ],
+      "dimensions": [
         0.95,
         0.04,
         0.1
       ],
-      "position": [
+      "center": [
         1.5,
         0.7,
         0.05
-      ],
-      "group": "B"
+      ]
     },
     {
+      "guid": "floor8:joist4",
       "name": "joist4",
-      "size": [
+      "ifc_type": "IfcMember",
+      "source_type": "member",
+      "group": "B",
+      "removal_rank": 1,
+      "aabb_min": [
+        1.025,
+        0.83,
+        0.0
+      ],
+      "aabb_max": [
+        1.975,
+        0.87,
+        0.1
+      ],
+      "dimensions": [
         0.95,
         0.04,
         0.1
       ],
-      "position": [
+      "center": [
         1.5,
         0.85,
         0.05
-      ],
-      "group": "B"
+      ]
     },
     {
+      "guid": "floor8:joist5",
       "name": "joist5",
-      "size": [
+      "ifc_type": "IfcMember",
+      "source_type": "member",
+      "group": "B",
+      "removal_rank": 1,
+      "aabb_min": [
+        1.025,
+        0.98,
+        0.0
+      ],
+      "aabb_max": [
+        1.975,
+        1.02,
+        0.1
+      ],
+      "dimensions": [
         0.95,
         0.04,
         0.1
       ],
-      "position": [
+      "center": [
         1.5,
         1.0,
         0.05
-      ],
-      "group": "B"
+      ]
     },
     {
+      "guid": "floor8:blocking1",
       "name": "blocking1",
-      "size": [
+      "ifc_type": "IfcMember",
+      "source_type": "member",
+      "group": "A",
+      "removal_rank": 0,
+      "aabb_min": [
+        1.18,
+        0.22,
+        0.0
+      ],
+      "aabb_max": [
+        1.22,
+        0.68,
+        0.1
+      ],
+      "dimensions": [
         0.04,
         0.46,
         0.1
       ],
-      "position": [
+      "center": [
         1.2,
         0.45,
         0.05
-      ],
-      "group": "A"
+      ]
     },
     {
+      "guid": "floor8:blocking2",
       "name": "blocking2",
-      "size": [
+      "ifc_type": "IfcMember",
+      "source_type": "member",
+      "group": "A",
+      "removal_rank": 0,
+      "aabb_min": [
+        1.48,
+        0.22,
+        0.0
+      ],
+      "aabb_max": [
+        1.52,
+        0.68,
+        0.1
+      ],
+      "dimensions": [
         0.04,
         0.46,
         0.1
       ],
-      "position": [
+      "center": [
         1.5,
         0.45,
         0.05
-      ],
-      "group": "A"
+      ]
     }
-  ]
+  ],
+  "simulation": {
+    "robot_start": [
+      2.5,
+      2.5,
+      0.15
+    ],
+    "copy_offset": [
+      0.0,
+      -3.0,
+      0.0
+    ],
+    "base_limits": [
+      [
+        -5.0,
+        -5.0
+      ],
+      [
+        5.0,
+        5.0
+      ]
+    ],
+    "colors": {
+      "A": [
+        0.9,
+        0.1,
+        0.1,
+        1.0
+      ],
+      "B": [
+        0.1,
+        0.2,
+        0.9,
+        1.0
+      ],
+      "C": [
+        1.0,
+        0.5,
+        0.0,
+        1.0
+      ]
+    },
+    "targets": [
+      {
+        "group": "C",
+        "size": [
+          2.5,
+          2.5,
+          0.001
+        ],
+        "position": [
+          -3.0,
+          -3.0,
+          null
+        ],
+        "size_growth": [
+          1.5,
+          0.0,
+          0.0
+        ],
+        "max_size": [
+          4.0,
+          2.5,
+          0.001
+        ],
+        "color": [
+          1.0,
+          0.5,
+          0.0,
+          0.5
+        ]
+      },
+      {
+        "group": "B",
+        "size": [
+          2.5,
+          2.5,
+          0.001
+        ],
+        "position": [
+          -3.0,
+          0.0,
+          null
+        ],
+        "size_growth": [
+          1.5,
+          0.0,
+          0.0
+        ],
+        "max_size": [
+          4.0,
+          2.5,
+          0.001
+        ],
+        "color": [
+          0.1,
+          0.2,
+          0.9,
+          0.5
+        ]
+      },
+      {
+        "group": "A",
+        "size": [
+          2.5,
+          2.5,
+          0.001
+        ],
+        "position": [
+          -3.0,
+          3.0,
+          null
+        ],
+        "size_growth": [
+          1.5,
+          0.0,
+          0.0
+        ],
+        "max_size": [
+          4.0,
+          2.5,
+          0.001
+        ],
+        "color": [
+          0.9,
+          0.1,
+          0.1,
+          0.5
+        ]
+      }
+    ],
+    "placement": {
+      "original_resting_face": true,
+      "preserve_face_with_group_filter": false
+    },
+    "clutter_keepout": {
+      "robot_radius": 0.9,
+      "member_margin": 0.3,
+      "workspace_margin": 0.4,
+      "target_boundary": {
+        "axis": 0,
+        "side": "lower",
+        "margin": 0.3
+      }
+    }
+  }
 }

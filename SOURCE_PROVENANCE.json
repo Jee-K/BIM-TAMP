@@ -9,7 +9,7 @@
       "source": "examples/pybullet/tamp/simple_single_object_test.py",
       "destination": "examples/pybullet/tamp/planner.py",
       "sha256": "5dc4bbeda5e72d68aa0f7e1c724b9e89a73a0e234455ab86e87afcc0fdd3762f",
-      "release_sha256": "d1798490262b10eed446081456244abfc411561d5ca822538bcab73cf5e23d21",
+      "release_sha256": "4ac425a7c7fb82a512d1cc1d169e2dfafffa5fc2309c82121670b2dd867bf2b5",
       "changed_for_release": true
     },
     {
@@ -49,7 +49,7 @@
     },
     {
       "source": "examples/pybullet/tamp/ifc2sim.py",
-      "destination": "examples/pybullet/tamp/ifc2sim.py",
+      "destination": "examples/pybullet/tamp/scene_manifest.py",
       "sha256": "a1d7448273fdfbcb08a5322867d8e1dd658332acfa9c3f3a5bdef7254c66d23d",
       "release_sha256": "1a733c91034126b31ac5c839f656bf5b8898dfb265b238196d9e26b2e7fd79b7",
       "changed_for_release": true
@@ -4364,10 +4364,10 @@
     "examples/pybullet/tamp/planning/domain.pddl": "269eac387a9694239254163f8c69c65d2950f301e764a4d27710b06f8f89240f",
     "examples/pybullet/tamp/planning/streams.pddl": "b83f5d917002d3a5ca3815be461fa4c4eef6108c48faf8827cb01089d47b81f5",
     "examples/pybullet/tamp/planning/problem.py": "f876ad96b86a50df47de25d218b7f61aa73d6e5c5dac7c07b97fd52d3c5c16c9",
-    "examples/pybullet/tamp/planning/stream_bindings.py": "f6e4d73b17a80388450f71687fed7fb7a839f09d9cf15284f73bb97f24583aeb",
-    "examples/pybullet/tamp/robot_geometry.py": "8f3878df3e1f7f55ff872020657503eb7d5fbdbbfe3277102cc11826d0f389d3",
-    "examples/pybullet/tamp/scene_loader.py": "1c5a5f2d41f3d61fd90e45e1fd832f1b65249e869a9850c8fe99d2e2ab4005f1",
-    "examples/pybullet/tamp/scenes/floor8.json": "e045d4a808e0fad8d2b69d017dba313bd74798c8dc6830ec4389e307f0bcddba",
+    "examples/pybullet/tamp/planning/stream_bindings.py": "ec602b483f1c5bfa564180a208ae4e217ac50bb27611245d3f9252ed4b67acd9",
+    "examples/pybullet/tamp/robot_geometry.py": "fda4a08af7cf67fb33d885a2eccdf495ad7e7b09516f273a99165c7ce0def77c",
+    "examples/pybullet/tamp/scene_loader.py": "d12908a866b2a8bdab4d42c15d71d70e87f74dbf5081ee5187ba5fe9924f93ee",
+    "examples/pybullet/tamp/scenes/floor8.json": "9df4f5caab0d7a8b61b9d3aa26d23bc7c573f56beeea518a490203426bdc3e87",
     "examples/pybullet/tamp/scenes/examples.json": "7951ea028055db4ae6a7c95b28f121cbce46b2b8260696a71d2d438192a3749b"
   }
 }

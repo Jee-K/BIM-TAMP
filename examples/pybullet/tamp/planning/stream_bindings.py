@@ -23,7 +23,7 @@ from pddlstream.language.constants import Equal, PDDLProblem, print_solution
 from pddlstream.language.generator import from_gen_fn, from_list_fn, from_fn, from_test
 from examples.pybullet.utils.pybullet_tools.pr2_primitives import iterate_approach_path
 from mppi_motion_planner import mppi_ik_gen
-from ifc2sim import load_ifc_scene, load_scene_manifest, prompt_for_types
+from scene_manifest import load_ifc_scene, load_scene_manifest, prompt_for_types
 from placement_layout import ordered_layout, flat_orientations, original_resting_orientation
 from run_statistics import get_run_statistics, track_current, with_run_statistics
 from motion_metrics import arm_motion_metrics

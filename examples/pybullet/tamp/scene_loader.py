@@ -1,9 +1,9 @@
-"""Construct simulator scenes from IFC manifests or explicit box-scene inputs."""
+"""Construct simulator scenes from IFC files or JSON manifests."""
 import json
 import os
 import numpy as np
 import pybullet as p
-from ifc2sim import load_ifc_scene, load_scene_manifest
+from scene_manifest import load_ifc_scene, load_scene_manifest
 from placement_layout import ordered_layout
 from robot_geometry import detect_connections
 from examples.pybullet.utils.pybullet_tools.pr2_problems import Problem, create_pr2
@@ -165,10 +165,10 @@ def create_scene_problem(scene_path, scale=1, clutter=0, clutter_seed=None, excl
     """Build DeconTAMP from an IFC2SIM JSON manifest; no IFC parsing occurs."""
     with open(scene_path) as stream:
         config = json.load(stream)
-    if config.get('scene_format') == 'box-scene-v1':
-        return create_box_scene_problem(scene_path, config, scale=scale, clutter=clutter,
-                                        clutter_seed=clutter_seed, exclude_groups=exclude_groups)
     scene = load_scene_manifest(scene_path)
+    if 'simulation' in config:
+        return create_configured_scene_problem(scene_path, config, scale=scale, clutter=clutter,
+                                               clutter_seed=clutter_seed, exclude_groups=exclude_groups)
     if exclude_groups:
         from dataclasses import replace
         members = tuple(m for m in scene.members if m.group not in exclude_groups)
@@ -182,17 +182,18 @@ def create_scene_problem(scene_path, scale=1, clutter=0, clutter_seed=None, excl
     return problem
 
 
-def create_box_scene_problem(scene_path, config, scale=1, clutter=0, clutter_seed=None, exclude_groups=None):
-    """Build a box-based instance entirely from its scene input."""
+def create_configured_scene_problem(scene_path, config, scale=1, clutter=0, clutter_seed=None, exclude_groups=None):
+    """Build a manifest instance with supplied workspace and target settings."""
     if scale < 1:
         raise ValueError('Scene scale must be positive')
     if not config.get('members'):
-        raise ValueError('Box scene has no members')
+        raise ValueError('Scene manifest has no members')
+    settings = config['simulation']
     add_data_path()
     floor = load_pybullet("plane.urdf")
 
     robot = create_pr2(fixed_base=False)
-    set_point(robot, tuple(config["robot_start"]))
+    set_point(robot, tuple(settings["robot_start"]))
 
 
     p.changeDynamics(robot, -1, contactProcessingThreshold=0.02,
@@ -208,7 +209,7 @@ def create_box_scene_problem(scene_path, config, scale=1, clutter=0, clutter_see
     open_arm(robot, arm)
 
     plates = {}
-    for target in config['targets']:
+    for target in settings['targets']:
         size = np.asarray(target['size'], dtype=float)
         size += (scale - 1) * np.asarray(target.get('size_growth', [0., 0., 0.]))
         size = np.minimum(size, target.get('max_size', size))
@@ -219,9 +220,9 @@ def create_box_scene_problem(scene_path, config, scale=1, clutter=0, clutter_see
         set_point(plate, tuple(position))
         plates[target['group']] = plate
     all_plates = list(plates.values())
-    members = [(m['name'], m['size'], m['position'], m['group'])
+    members = [(m['name'], m['dimensions'], m['center'], m['group'])
                       for m in config['members']]
-    copy_offset = np.asarray(config.get('copy_offset', [0., 0., 0.]))
+    copy_offset = np.asarray(settings.get('copy_offset', [0., 0., 0.]))
     objects_info = []
     for i in range(scale):
         for name, size, (px, py, pz), group in members:
@@ -235,7 +236,7 @@ def create_box_scene_problem(scene_path, config, scale=1, clutter=0, clutter_see
     object_groups = {}
     body_names = {}
     for name, size, pos, group in objects_info:
-        color = config['colors'][group]
+        color = settings['colors'][group]
         obj = create_box(size[0], size[1], size[2], color=color)
         add_body_name(obj, name)
         set_point(obj, Point(x=pos[0], y=pos[1], z=pos[2]))
@@ -272,7 +273,7 @@ def create_box_scene_problem(scene_path, config, scale=1, clutter=0, clutter_see
                 if pairwise_collision(body, other):
                     print("[GEOM DEBUG] collision body {} with {}".format(body, other))
 
-    base_limits = tuple(np.asarray(v, dtype=float) for v in config['base_limits'])
+    base_limits = tuple(np.asarray(v, dtype=float) for v in settings['base_limits'])
     xmin, ymin = base_limits[0]
     xmax, ymax = base_limits[1]
     z = 0.01
@@ -294,7 +295,7 @@ def create_box_scene_problem(scene_path, config, scale=1, clutter=0, clutter_see
     problem.connections = connections
     problem.scale = scale
     problem.clutter = clutter
-    policy = config.get('placement', {})
+    policy = settings.get('placement', {})
     problem.original_resting_face = policy.get('original_resting_face', False) and (
         not exclude_groups or policy.get('preserve_face_with_group_filter', True))
     problem.upright_placement_groups = set(policy.get('upright_groups', []))
@@ -307,12 +308,12 @@ def create_box_scene_problem(scene_path, config, scale=1, clutter=0, clutter_see
 
 
         (xmn, ymn), (xmx, ymx) = base_limits
-        keepout = config.get('clutter_keepout', {})
+        keepout = settings.get('clutter_keepout', {})
         boundary = keepout.get('target_boundary')
         if boundary:
             axis = boundary['axis']
             target_edge = max(get_aabb(b)[1][axis] for b in all_plates) if boundary['side'] == 'lower' else min(get_aabb(b)[0][axis] for b in all_plates)
-        keepouts = [(*config['robot_start'][:2], keepout.get('robot_radius', .9))]
+        keepouts = [(*settings['robot_start'][:2], keepout.get('robot_radius', .9))]
         for _nm, _sz, (_ox, _oy, _oz), _g in objects_info:
             keepouts.append((_ox, _oy, 0.5 * float(np.hypot(_sz[0], _sz[1])) + keepout.get('member_margin', .3)))
 
