@@ -5,133 +5,133 @@
       "path": "clearpath_a200/attachments/pacs_top_plate.stl",
       "bytes": 2484,
       "sha256": "4ed793b048a82056bb6ae702a0ba327355eae51c2c83dac65fad2cbb0e059265",
-      "redistribution_status": "unverified_local_copy"
+      "redistribution_status": "unverified_bundled_copy"
     },
     {
       "path": "clearpath_a200/base_link.dae",
       "bytes": 462538,
       "sha256": "d3df19830e28787a750026e94865895a25b45a3a2ca8d46503b887404944a39e",
-      "redistribution_status": "unverified_local_copy"
+      "redistribution_status": "unverified_bundled_copy"
     },
     {
       "path": "clearpath_a200/top_chassis.dae",
       "bytes": 1225750,
       "sha256": "3364b518568a65497e11f9adc9d0b9e65bf2dd6870625a7bf978e1f9994f5aa4",
-      "redistribution_status": "unverified_local_copy"
+      "redistribution_status": "unverified_bundled_copy"
     },
     {
       "path": "clearpath_a200/wheel.dae",
       "bytes": 2800383,
       "sha256": "0e38706f933ccb0a2fc198ed5203fb089a671a483217790d1cb8583ed9c3dbad",
-      "redistribution_status": "unverified_local_copy"
+      "redistribution_status": "unverified_bundled_copy"
     },
     {
       "path": "robotiq_hande/finger.dae",
       "bytes": 480348,
       "sha256": "2e46fbe8009e78322e5649db7d0483ca8f4abbaff099929036b31f10b2b36e97",
-      "redistribution_status": "unverified_local_copy"
+      "redistribution_status": "unverified_bundled_copy"
     },
     {
       "path": "robotiq_hande/finger_collision.dae",
       "bytes": 7419,
       "sha256": "144f0c4e86b358c3de5fcf50484592ce0be13bd3257eb808e7cb8dc944fbb2aa",
-      "redistribution_status": "unverified_local_copy"
+      "redistribution_status": "unverified_bundled_copy"
     },
     {
       "path": "robotiq_hande/hande.dae",
       "bytes": 4875997,
       "sha256": "5d5ed4d659d3e7196c0e7d22fc3ebe759d4f87641094cb558122960c5d867358",
-      "redistribution_status": "unverified_local_copy"
+      "redistribution_status": "unverified_bundled_copy"
     },
     {
       "path": "robotiq_hande/io_coupler.dae",
       "bytes": 9092287,
       "sha256": "fb079afc378f772744ed791f704876c0962b3b8d351c67af62399bcf295e0c68",
-      "redistribution_status": "unverified_local_copy"
+      "redistribution_status": "unverified_bundled_copy"
     },
     {
       "path": "ur5e/collision/base.stl",
       "bytes": 21084,
       "sha256": "9a145e0d46f2130afdf2a2e8825a00a929870c4c3d6d8e4d1adc5f04db3aac1b",
-      "redistribution_status": "unverified_local_copy"
+      "redistribution_status": "unverified_bundled_copy"
     },
     {
       "path": "ur5e/collision/forearm.stl",
       "bytes": 53284,
       "sha256": "2e7423cab807c34160ec4f770daee5e747d70e777eb01b7beeace2b8c5751816",
-      "redistribution_status": "unverified_local_copy"
+      "redistribution_status": "unverified_bundled_copy"
     },
     {
       "path": "ur5e/collision/shoulder.stl",
       "bytes": 70084,
       "sha256": "ceb92532177daa77682f5fbd628e01c2137d168f949a7a706ce1dabe9f002387",
-      "redistribution_status": "unverified_local_copy"
+      "redistribution_status": "unverified_bundled_copy"
     },
     {
       "path": "ur5e/collision/upperarm.stl",
       "bytes": 99684,
       "sha256": "ee893044caf00075cb55b4cf666d1f1311c7979786212a501009f33bee945209",
-      "redistribution_status": "unverified_local_copy"
+      "redistribution_status": "unverified_bundled_copy"
     },
     {
       "path": "ur5e/collision/wrist1.stl",
       "bytes": 59584,
       "sha256": "f8c9f9337b6fd98c75f052e96de10e14a107ddb6874ba6b904e546f8a4e4f43a",
-      "redistribution_status": "unverified_local_copy"
+      "redistribution_status": "unverified_bundled_copy"
     },
     {
       "path": "ur5e/collision/wrist2.stl",
       "bytes": 67584,
       "sha256": "2964a63f60ce3e3cf3ad55bcf190d7876d50e373cb64b70a57cea5885eaf3c86",
-      "redistribution_status": "unverified_local_copy"
+      "redistribution_status": "unverified_bundled_copy"
     },
     {
       "path": "ur5e/collision/wrist3.stl",
       "bytes": 7184,
       "sha256": "83b3666b4ae2badd54af0d2c25a921682ecbc29e849eec646c3ed55fb74c78a3",
-      "redistribution_status": "unverified_local_copy"
+      "redistribution_status": "unverified_bundled_copy"
     },
     {
       "path": "ur5e/visual/base.dae",
       "bytes": 358056,
       "sha256": "c30e4d7228ef633dca2a02c26df2316741f6642cb6333e8289dba6e6d0b22819",
-      "redistribution_status": "unverified_local_copy"
+      "redistribution_status": "unverified_bundled_copy"
     },
     {
       "path": "ur5e/visual/forearm.dae",
       "bytes": 1140937,
       "sha256": "04694bf57dac46e9b8bc7c30f2eec75a1bc762e1f1a879ea30c944f24cacbad8",
-      "redistribution_status": "unverified_local_copy"
+      "redistribution_status": "unverified_bundled_copy"
     },
     {
       "path": "ur5e/visual/shoulder.dae",
       "bytes": 1797083,
       "sha256": "c581bfa55b86061d9b99d315ed53817b6b693e6a500643bbf9bbb783322d585d",
-      "redistribution_status": "unverified_local_copy"
+      "redistribution_status": "unverified_bundled_copy"
     },
     {
       "path": "ur5e/visual/upperarm.dae",
       "bytes": 3082486,
       "sha256": "c040a05bb224f14cfab6aa6704d70cbb773ada940eca9a3e34e6ce486c4c4c29",
-      "redistribution_status": "unverified_local_copy"
+      "redistribution_status": "unverified_bundled_copy"
     },
     {
       "path": "ur5e/visual/wrist1.dae",
       "bytes": 1334663,
       "sha256": "a07a3d96d2540f9be12e4a07bcb8577d9f1e36005920c396a407804343a3b588",
-      "redistribution_status": "unverified_local_copy"
+      "redistribution_status": "unverified_bundled_copy"
     },
     {
       "path": "ur5e/visual/wrist2.dae",
       "bytes": 1554839,
       "sha256": "982fa42933c6f81629882ad7975e9ba5dac5d474a6b56694e233708376cf840e",
-      "redistribution_status": "unverified_local_copy"
+      "redistribution_status": "unverified_bundled_copy"
     },
     {
       "path": "ur5e/visual/wrist3.dae",
       "bytes": 66077,
       "sha256": "7a7664ac4adcd53b0870fe6a2b8b975693d846dd4d07a5f44194c7d16f4890ba",
-      "redistribution_status": "unverified_local_copy"
+      "redistribution_status": "unverified_bundled_copy"
     }
   ]
 }

@@ -11,6 +11,3 @@ __pycache__/
 *.log
 *_plan.json
 *_audit.json
-# Local mesh copies: upstream licensing/provenance has not been verified.
-/models/**/*.dae
-/models/**/*.stl

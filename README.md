@@ -16,17 +16,10 @@ python -m pip install -r requirements.txt
 python downward/build.py release -j2
 ```
 
-The robot meshes are available in the local `models/` folder, but are excluded
-from Git while their upstream provenance and redistribution terms are unresolved.
-A public clone needs an authorized copy of the matching assets. Install and verify
-that bundle with:
-
-```bash
-python scripts/install_assets.py --from /path/to/models
-```
-
-`models/ASSET_MANIFEST.json` contains the required filenames and hashes.
-Changing collision meshes can change experiment results.
+The robot URDF (`examples/pybullet/tamp/full_robot.urdf`) and its required mesh
+files (`models/`) are included. No separate robot asset download is needed.
+`models/ASSET_MANIFEST.json` records the filenames and hashes used by the
+experiments. Changing collision meshes can change experiment results.
 
 ## Experiments
 
@@ -158,5 +151,7 @@ The existing root GPLv3 license text and upstream notices are retained.
 | Motion planners | https://github.com/caelan/motion-planners | `licenses/motion-planners-LICENSE` |
 | Fast Downward | https://github.com/caelan/downward | `downward/LICENSE.md` |
 
-Installed Python dependencies retain their own licenses. Robot mesh redistribution
-is unresolved; the source license does not grant rights to those mesh files.
+Installed Python dependencies and bundled robot meshes remain subject to their
+respective upstream licenses. Exact mesh attribution and redistribution terms
+have not been fully verified; please check them before redistributing the assets.
+The framework license does not grant additional rights to third-party meshes.
