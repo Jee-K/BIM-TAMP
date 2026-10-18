@@ -10,8 +10,8 @@ Tested on Ubuntu 22.04 with Python 3.11. Install a C++ compiler, Make and CMake,
 then run from the repository root:
 
 ```bash
-python3.11 -m venv .venv
-source .venv/bin/activate
+conda create -n bimtamp python=3.11 pip -y
+conda activate bimtamp
 python -m pip install -r requirements.txt
 python downward/build.py release -j2
 ```
@@ -30,7 +30,7 @@ Changing collision meshes can change experiment results.
 
 ## Experiments
 
-Activate the Python environment before running the launcher. Alternatively, set
+Activate the environment with `conda activate bimtamp` before running the launcher. Alternatively, set
 `BIM_TAMP_PYTHON` to the interpreter's absolute path.
 
 Check the inputs without starting planning:
