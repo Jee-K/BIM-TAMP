@@ -1,0 +1,8 @@
+{
+  "corner": {
+    "scene": "corner_2_7col.json"
+  },
+  "floor8": {
+    "scene": "floor8.json"
+  }
+}

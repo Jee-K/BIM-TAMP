@@ -1,0 +1,188 @@
+{
+  "schema_version": 1,
+  "source_ifc": "/home/jeehoonkim/workspace/TAMP/pddlstream/examples/pybullet/tamp/timber_frame_1m_ranked.ifc",
+  "group_order": [
+    "beam",
+    "column"
+  ],
+  "aabb_min": [
+    -8.882584868128589,
+    15.037916264834697,
+    0.0
+  ],
+  "aabb_max": [
+    -7.84258486812859,
+    15.8779162648347,
+    0.6
+  ],
+  "members": [
+    {
+      "guid": "2r0a9HYNf76uMSS85nHfbc",
+      "name": "Timber_Beam_40_80_589946",
+      "ifc_type": "IfcBeam",
+      "source_type": "Timber:Beam_40_80",
+      "group": "beam",
+      "removal_rank": 2,
+      "aabb_min": [
+        -8.84258486812859,
+        15.037916264834697,
+        0.5199999999999999
+      ],
+      "aabb_max": [
+        -7.882584868128589,
+        15.0779162648347,
+        0.6
+      ],
+      "dimensions": [
+        0.9600000000000009,
+        0.0400000000000027,
+        0.08000000000000007
+      ],
+      "center": [
+        -8.36258486812859,
+        15.057916264834699,
+        0.5599999999999999
+      ]
+    },
+    {
+      "guid": "2r0a9HYNf76uMSS85nHfbz",
+      "name": "Timber_Beam_40_80_589921",
+      "ifc_type": "IfcBeam",
+      "source_type": "Timber:Beam_40_80",
+      "group": "beam",
+      "removal_rank": 2,
+      "aabb_min": [
+        -8.84258486812859,
+        15.837916264834698,
+        0.5199999999999999
+      ],
+      "aabb_max": [
+        -7.882584868128589,
+        15.8779162648347,
+        0.6
+      ],
+      "dimensions": [
+        0.9600000000000009,
+        0.0400000000000027,
+        0.08000000000000007
+      ],
+      "center": [
+        -8.36258486812859,
+        15.8579162648347,
+        0.5599999999999999
+      ]
+    },
+    {
+      "guid": "2r0a9HYNf76uMSS85nHsGc",
+      "name": "PSL_Parallel_Strand_Lumber_Column_40_40_589114",
+      "ifc_type": "IfcColumn",
+      "source_type": "PSL-Parallel Strand Lumber-Column:40_40",
+      "group": "column",
+      "removal_rank": 3,
+      "aabb_min": [
+        -8.882584868128589,
+        15.8379162648347,
+        0.0
+      ],
+      "aabb_max": [
+        -8.84258486812859,
+        15.877916264834699,
+        0.6
+      ],
+      "dimensions": [
+        0.03999999999999915,
+        0.03999999999999915,
+        0.6
+      ],
+      "center": [
+        -8.86258486812859,
+        15.8579162648347,
+        0.3
+      ]
+    },
+    {
+      "guid": "2r0a9HYNf76uMSS85nHsJj",
+      "name": "PSL_Parallel_Strand_Lumber_Column_40_40_589297",
+      "ifc_type": "IfcColumn",
+      "source_type": "PSL-Parallel Strand Lumber-Column:40_40",
+      "group": "column",
+      "removal_rank": 3,
+      "aabb_min": [
+        -7.882584868128589,
+        15.8379162648347,
+        0.0
+      ],
+      "aabb_max": [
+        -7.84258486812859,
+        15.877916264834699,
+        0.6
+      ],
+      "dimensions": [
+        0.03999999999999915,
+        0.03999999999999915,
+        0.6
+      ],
+      "center": [
+        -7.8625848681285895,
+        15.8579162648347,
+        0.3
+      ]
+    },
+    {
+      "guid": "2r0a9HYNf76uMSS85nHsPv",
+      "name": "PSL_Parallel_Strand_Lumber_Column_40_40_589669",
+      "ifc_type": "IfcColumn",
+      "source_type": "PSL-Parallel Strand Lumber-Column:40_40",
+      "group": "column",
+      "removal_rank": 3,
+      "aabb_min": [
+        -8.882584868128589,
+        15.0379162648347,
+        0.0
+      ],
+      "aabb_max": [
+        -8.84258486812859,
+        15.077916264834698,
+        0.6
+      ],
+      "dimensions": [
+        0.03999999999999915,
+        0.03999999999999915,
+        0.6
+      ],
+      "center": [
+        -8.86258486812859,
+        15.057916264834699,
+        0.3
+      ]
+    },
+    {
+      "guid": "2r0a9HYNf76uMSS85nHsQP",
+      "name": "PSL_Parallel_Strand_Lumber_Column_40_40_589701",
+      "ifc_type": "IfcColumn",
+      "source_type": "PSL-Parallel Strand Lumber-Column:40_40",
+      "group": "column",
+      "removal_rank": 3,
+      "aabb_min": [
+        -7.882584868128589,
+        15.0379162648347,
+        0.0
+      ],
+      "aabb_max": [
+        -7.84258486812859,
+        15.077916264834698,
+        0.6
+      ],
+      "dimensions": [
+        0.03999999999999915,
+        0.03999999999999915,
+        0.6
+      ],
+      "center": [
+        -7.8625848681285895,
+        15.057916264834699,
+        0.3
+      ]
+    }
+  ]
+}

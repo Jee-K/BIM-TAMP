@@ -1,0 +1,18 @@
+{
+  "joint_names": [
+    "arm_shoulder_pan_joint",
+    "arm_shoulder_lift_joint",
+    "arm_elbow_joint",
+    "arm_wrist_1_joint",
+    "arm_wrist_2_joint",
+    "arm_wrist_3_joint"
+  ],
+  "joint_positions": [
+    -0.33667604807430396,
+    -2.4349233658347513,
+    1.2061919907694105,
+    -5.0211789046976865,
+    -1.9419986971545562,
+    -1.5579799412447124
+  ]
+}

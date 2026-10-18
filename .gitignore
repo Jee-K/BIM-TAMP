@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+/downward/builds/
+**/results/
+**/log/
+**/temp/
+**/statistics/
+*.pkl
+*.log
+*_plan.json
+*_audit.json
+# Local mesh copies: upstream licensing/provenance has not been verified.
+/models/**/*.dae
+/models/**/*.stl

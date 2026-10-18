@@ -1,0 +1,266 @@
+{
+  "scene_format": "box-scene-v1",
+  "name": "floor8",
+  "robot_start": [
+    2.5,
+    2.5,
+    0.15
+  ],
+  "copy_offset": [
+    0.0,
+    -3.0,
+    0.0
+  ],
+  "base_limits": [
+    [
+      -5.0,
+      -5.0
+    ],
+    [
+      5.0,
+      5.0
+    ]
+  ],
+  "group_order": [
+    "A",
+    "B",
+    "C"
+  ],
+  "colors": {
+    "A": [
+      0.9,
+      0.1,
+      0.1,
+      1.0
+    ],
+    "B": [
+      0.1,
+      0.2,
+      0.9,
+      1.0
+    ],
+    "C": [
+      1.0,
+      0.5,
+      0.0,
+      1.0
+    ]
+  },
+  "targets": [
+    {
+      "group": "C",
+      "size": [
+        2.5,
+        2.5,
+        0.001
+      ],
+      "position": [
+        -3.0,
+        -3.0,
+        null
+      ],
+      "size_growth": [
+        1.5,
+        0.0,
+        0.0
+      ],
+      "max_size": [
+        4.0,
+        2.5,
+        0.001
+      ],
+      "color": [
+        1.0,
+        0.5,
+        0.0,
+        0.5
+      ]
+    },
+    {
+      "group": "B",
+      "size": [
+        2.5,
+        2.5,
+        0.001
+      ],
+      "position": [
+        -3.0,
+        0.0,
+        null
+      ],
+      "size_growth": [
+        1.5,
+        0.0,
+        0.0
+      ],
+      "max_size": [
+        4.0,
+        2.5,
+        0.001
+      ],
+      "color": [
+        0.1,
+        0.2,
+        0.9,
+        0.5
+      ]
+    },
+    {
+      "group": "A",
+      "size": [
+        2.5,
+        2.5,
+        0.001
+      ],
+      "position": [
+        -3.0,
+        3.0,
+        null
+      ],
+      "size_growth": [
+        1.5,
+        0.0,
+        0.0
+      ],
+      "max_size": [
+        4.0,
+        2.5,
+        0.001
+      ],
+      "color": [
+        0.9,
+        0.1,
+        0.1,
+        0.5
+      ]
+    }
+  ],
+  "placement": {
+    "original_resting_face": true,
+    "preserve_face_with_group_filter": false
+  },
+  "clutter_keepout": {
+    "robot_radius": 0.9,
+    "member_margin": 0.3,
+    "workspace_margin": 0.4,
+    "target_boundary": {
+      "axis": 0,
+      "side": "lower",
+      "margin": 0.3
+    }
+  },
+  "members": [
+    {
+      "name": "beam1",
+      "size": [
+        0.045,
+        1.0,
+        0.1
+      ],
+      "position": [
+        1.0,
+        0.6,
+        0.05
+      ],
+      "group": "C"
+    },
+    {
+      "name": "beam2",
+      "size": [
+        0.045,
+        1.0,
+        0.1
+      ],
+      "position": [
+        2.0,
+        0.6,
+        0.05
+      ],
+      "group": "C"
+    },
+    {
+      "name": "joist1",
+      "size": [
+        0.95,
+        0.04,
+        0.1
+      ],
+      "position": [
+        1.5,
+        0.2,
+        0.05
+      ],
+      "group": "B"
+    },
+    {
+      "name": "joist3",
+      "size": [
+        0.95,
+        0.04,
+        0.1
+      ],
+      "position": [
+        1.5,
+        0.7,
+        0.05
+      ],
+      "group": "B"
+    },
+    {
+      "name": "joist4",
+      "size": [
+        0.95,
+        0.04,
+        0.1
+      ],
+      "position": [
+        1.5,
+        0.85,
+        0.05
+      ],
+      "group": "B"
+    },
+    {
+      "name": "joist5",
+      "size": [
+        0.95,
+        0.04,
+        0.1
+      ],
+      "position": [
+        1.5,
+        1.0,
+        0.05
+      ],
+      "group": "B"
+    },
+    {
+      "name": "blocking1",
+      "size": [
+        0.04,
+        0.46,
+        0.1
+      ],
+      "position": [
+        1.2,
+        0.45,
+        0.05
+      ],
+      "group": "A"
+    },
+    {
+      "name": "blocking2",
+      "size": [
+        0.04,
+        0.46,
+        0.1
+      ],
+      "position": [
+        1.5,
+        0.45,
+        0.05
+      ],
+      "group": "A"
+    }
+  ]
+}
