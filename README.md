@@ -1,8 +1,13 @@
-# BIM-TAMP
+# IFC-TAMP
 
 Task and motion planning for robotic disassembly using BIM-derived component
 geometry and removal groups. The simulator uses a Husky base, UR5e arm and
 Robotiq Hand-E gripper. Planning uses PDDLStream, Fast Downward and PyBullet.
+
+## Example replays
+
+- [Corner structure (seed 17)](media/corner_seed17.mp4)
+- [Floor8 structure (seed 23)](media/floor_seed23.mp4)
 
 ## Setup
 
